@@ -11,7 +11,6 @@ import CaseSearch from './CaseSearch.jsx';
 import SingleCase from './SingleCase.jsx';
 import Plugin from './Plugin.jsx';
 import About from './About.jsx';
-import logo from '../img/logo.png';
 import { Container, Header, Icon, Menu, Segment } from 'semantic-ui-react'
 
 class App extends Component {
