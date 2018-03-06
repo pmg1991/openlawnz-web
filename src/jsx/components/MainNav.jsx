@@ -26,6 +26,12 @@ class App extends Component {
 				<Menu.Item active={pathname === '/plugin'}>
 					<Link to="/plugin">legislation.govt.nz Plugin</Link>
 				</Menu.Item>
+				<Menu.Item>
+					<a href="https://api.openlaw.nz/graphql">API &nbsp;<Icon name='external' fitted /></a>
+				</Menu.Item>
+				<Menu.Item>
+					<a href="https://github.com/openlawnz">Github &nbsp;<Icon name='external' fitted /></a>
+				</Menu.Item>
 				
 				<Menu.Menu position='right'>
 					<div className='ui right aligned category search item'>

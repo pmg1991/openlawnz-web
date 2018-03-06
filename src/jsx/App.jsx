@@ -5,6 +5,7 @@ import {
 	Route,
 	Link
 } from 'react-router-dom'
+import { hot } from 'react-hot-loader'
 import MainNav from './components/MainNav.jsx';
 import Home from './Home.jsx';
 import CaseSearch from './CaseSearch.jsx';
@@ -29,7 +30,7 @@ class App extends Component {
 						<Icon name='legal' />
 						OpenLaw NZ
 						<Header.Subheader>
-						Linking New Zealand case law with legislation
+							New Zealand case law and legislation metadata
 						</Header.Subheader>
 					</Header>
 
@@ -52,4 +53,4 @@ class App extends Component {
 	}
 }
 
-export default App;
+export default hot(module)(App);

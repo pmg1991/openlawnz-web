@@ -1,11 +1,12 @@
 # openlawnz-web
 
-**FIRST CUT**
-
 ## Running
 
-	cd web-build
-	yarn install
-	yarn run serve
+	npm install
+	npm run dev
+
+## Building
+
+	npm run build
 
 Visit http://localhost:9000/

@@ -4,9 +4,24 @@ class ApiService {
 	 * @returns {ApiService}
 	 */
 	constructor() {
-		this.apiUrl = 'http://localhost:4000/graphql';
-		this.caseFields = `{id, case_name, bucket_key}`;
+		this.apiUrl = 'https://api.openlaw.nz/graphql';
+		this.caseFields = `{
+			id,
+			case_name,
+			bucket_key,
+			cited_by 
+			{ 
+				id, 
+				case_name
+			},
+			cites 
+			{ 
+				id, 
+				case_name
+			}
+		}`;
 	}
+	
 	/**
 	 * Generic function to fetch data from server
 	 * @param {string} query

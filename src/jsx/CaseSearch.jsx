@@ -19,9 +19,9 @@ class CaseSearch extends Component {
 	}
 
 	async componentDidMount() {
-		//let cases = await ApiService.getCases();
-		//cases = cases.slice(0, 100)
-        //this.setState({ cases });
+		let cases = await ApiService.getCases();
+		cases = cases.slice(0, 100)
+        this.setState({ cases });
 	}
 
 	render() {
@@ -30,13 +30,10 @@ class CaseSearch extends Component {
 			<React.Fragment>
 				<Header as='h2'>Case Search</Header>
 				<ul>
-				
 				{
-					/*
 					this.state.cases.map((obj, i) => {
-						return <li key={i}><Link to={`/cases/${obj.id}`}>{obj.case_name}</Link></li>
+						return <li key={i}><Link to={`/case/${obj.id}`}>{obj.case_name}</Link></li>
 					})
-					*/
 				}
 				</ul>
 			</React.Fragment>
