@@ -7,7 +7,7 @@ class App extends Component {
     const { pathname } = this.props.location;
 
     return (
-      <Responsive minWidth={1020} as={Menu} attached="top">
+      <Menu attached="top">
         <Menu.Item active={pathname === "/"}>
           <Link to="/">Home</Link>
         </Menu.Item>
@@ -32,21 +32,7 @@ class App extends Component {
             Github &nbsp;<Icon name="external" fitted />
           </a>
         </Menu.Item>
-
-        <Menu.Menu position="right">
-          <div className="ui right aligned category search item">
-            <div className="ui transparent icon input">
-              <input
-                className="prompt"
-                type="text"
-                placeholder="Quick Case Search..."
-              />
-              <i className="search link icon" />
-            </div>
-            <div className="results" />
-          </div>
-        </Menu.Menu>
-      </Responsive>
+      </Menu>
     );
   }
 }
